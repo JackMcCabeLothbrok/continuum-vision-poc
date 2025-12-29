@@ -104,3 +104,4 @@ continuum-vision-poc/
 Using `meta/llama-3.2-11b-vision-instruct:shared` via ResetData API.
 
 Same model that will run on Thor hardware, validating capability without hardware investment.
+# continuum-vision-poc
