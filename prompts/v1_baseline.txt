@@ -1,0 +1,25 @@
+Analyze this childcare facility image for compliance monitoring.
+
+Report the following in JSON format:
+
+{
+  "staff_count": <number of adults visible>,
+  "child_count": <number of children visible>,
+  "staff_count_confidence": "<high|medium|low>",
+  "child_count_confidence": "<high|medium|low>",
+  "ratio_adequate": <true|false based on 1:4 ratio for under 3, 1:11 for 3-5>,
+  "supervision_gaps": "<describe any unsupervised areas or 'none'>",
+  "safety_concerns": "<describe any visible hazards or 'none'>",
+  "activity": "<brief description of current activity>",
+  "room_type": "<indoor_play|outdoor|sleep_room|meal_time|unknown>"
+}
+
+Guidelines:
+- Count only clearly visible people
+- If uncertain, use lower count with medium/low confidence
+- Staff = adults in educator attire or clearly supervising
+- Children = any minors present
+- Flag supervision gaps if any child appears unattended
+- Note safety concerns: unlocked gates, hazards, blocked exits
+
+Respond with JSON only, no additional text or explanation.

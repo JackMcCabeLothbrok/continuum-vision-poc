@@ -1,0 +1,31 @@
+# Environment
+.env
+*.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.venv/
+
+# Test data (images may be large/sensitive)
+test_data/frames/*.jpg
+test_data/frames/*.png
+test_data/frames/*.jpeg
+
+# Results (regenerated)
+discovery/results/*.json
+evaluation/results/*.json
+evaluation/results/*.csv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

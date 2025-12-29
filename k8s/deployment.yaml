@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vision-proxy
+  namespace: continuum-poc
+  labels:
+    app: vision-proxy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vision-proxy
+  template:
+    metadata:
+      labels:
+        app: vision-proxy
+    spec:
+      containers:
+      - name: vision-proxy
+        image: continuum/vision-proxy:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: RESETDATA_BASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: resetdata-credentials
+              key: base_url
+        - name: RESETDATA_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: resetdata-credentials
+              key: api_key
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "100m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 15
+          periodSeconds: 20
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vision-proxy
+  namespace: continuum-poc
+spec:
+  selector:
+    app: vision-proxy
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP

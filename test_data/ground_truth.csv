@@ -1,0 +1,6 @@
+frame_id,filename,adult_count,child_count,scenario,lighting,occlusion_level,notes
+001,indoor_play_natural_low_001.jpg,2,6,indoor_play,natural,low,Clear view of play area
+002,indoor_play_natural_medium_001.jpg,1,4,indoor_play,natural,medium,Some children partially behind furniture
+003,outdoor_natural_low_001.jpg,2,8,outdoor,natural,low,Playground area full sun
+004,sleep_room_dim_low_001.jpg,1,5,sleep_room,dim,low,Rest time with low lighting
+005,meal_time_artificial_low_001.jpg,2,7,meal_time,artificial,low,Lunch time at tables
