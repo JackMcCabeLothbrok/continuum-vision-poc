@@ -1,0 +1,478 @@
+{
+  "analysis_time": "2025-12-29T05:19:29.250235",
+  "model": "meta/llama-3.2-11b-vision-instruct:shared",
+  "prompt": "Count the adults and children visible in this childcare image.\nRespond with JSON only: {\"adult_count\": X, \"child_count\": Y}",
+  "frames_directory": "test_data/extracted/ChildcareCentreScenes",
+  "ground_truth_source": "test_data/extracted/ChildcareCentreScenes/ground_truth.json",
+  "summary": {
+    "total_frames": 14,
+    "overall": {
+      "adult_exact_match": "8/14 (57.1%)",
+      "adult_within_range": "10/14 (71.4%)",
+      "adult_within_1": "12/14 (85.7%)",
+      "child_exact_match": "11/14 (78.6%)",
+      "child_within_range": "12/14 (85.7%)",
+      "child_within_2": "12/14 (85.7%)"
+    },
+    "by_difficulty": {
+      "easy": {
+        "count": 5,
+        "adult_exact": 100.0,
+        "adult_within_1": 100.0,
+        "child_exact": 100.0,
+        "child_within_2": 100.0
+      },
+      "medium": {
+        "count": 6,
+        "adult_exact": 33.33333333333333,
+        "adult_within_1": 83.33333333333334,
+        "child_exact": 66.66666666666666,
+        "child_within_2": 83.33333333333334
+      },
+      "hard": {
+        "count": 3,
+        "adult_exact": 33.33333333333333,
+        "adult_within_1": 66.66666666666666,
+        "child_exact": 66.66666666666666,
+        "child_within_2": 66.66666666666666
+      }
+    },
+    "by_scene": {
+      "indoor_classroom": {
+        "count": 3,
+        "adult_within_1": 66.66666666666666,
+        "child_within_2": 66.66666666666666
+      },
+      "outdoor_amphitheatre": {
+        "count": 1,
+        "adult_within_1": 100.0,
+        "child_within_2": 100.0
+      },
+      "outdoor_playground": {
+        "count": 2,
+        "adult_within_1": 100.0,
+        "child_within_2": 100.0
+      },
+      "outdoor_sandpit": {
+        "count": 1,
+        "adult_within_1": 100.0,
+        "child_within_2": 100.0
+      },
+      "indoor_craft": {
+        "count": 6,
+        "adult_within_1": 83.33333333333334,
+        "child_within_2": 83.33333333333334
+      },
+      "outdoor_fence": {
+        "count": 1,
+        "adult_within_1": 100.0,
+        "child_within_2": 100.0
+      }
+    },
+    "compliance_detection": [
+      {
+        "frame": "frame_000009.jpg",
+        "flag": "potential_supervision_gap",
+        "detected": true
+      }
+    ],
+    "processing": {
+      "avg_time_per_frame": "1.36s",
+      "total_time": "19.05s"
+    }
+  },
+  "frame_results": [
+    {
+      "frame_name": "frame_000001.jpg",
+      "timestamp": "00:00",
+      "scene": "indoor_classroom",
+      "difficulty": "hard",
+      "gt_adults": 4,
+      "gt_adults_range": [
+        3,
+        5
+      ],
+      "gt_children": 7,
+      "gt_children_range": [
+        6,
+        8
+      ],
+      "pred_adults": 3,
+      "pred_children": 7,
+      "adult_exact_match": false,
+      "adult_within_range": true,
+      "adult_within_1": true,
+      "child_exact_match": true,
+      "child_within_range": true,
+      "child_within_2": true,
+      "processing_time": 2.0353705883026123,
+      "raw_response": "{\"adult_count\": 3, \"child_count\": 7}",
+      "notes": "Wide shot with title overlay obscuring some people. Multiple activity areas.",
+      "compliance_flag": ""
+    },
+    {
+      "frame_name": "frame_000002.jpg",
+      "timestamp": "00:10",
+      "scene": "indoor_classroom",
+      "difficulty": "medium",
+      "gt_adults": 5,
+      "gt_adults_range": [
+        4,
+        5
+      ],
+      "gt_children": 6,
+      "gt_children_range": [
+        5,
+        7
+      ],
+      "pred_adults": 3,
+      "pred_children": 6,
+      "adult_exact_match": false,
+      "adult_within_range": false,
+      "adult_within_1": false,
+      "child_exact_match": true,
+      "child_within_range": true,
+      "child_within_2": true,
+      "processing_time": 1.3911945819854736,
+      "raw_response": "{\"adult_count\": 3, \"child_count\": 6}",
+      "notes": "Clear shot. 3 TAFE students in uniform + 2 other adults. 6 toddlers at tables.",
+      "compliance_flag": ""
+    },
+    {
+      "frame_name": "frame_000003.jpg",
+      "timestamp": "00:20",
+      "scene": "indoor_classroom",
+      "difficulty": "hard",
+      "gt_adults": 3,
+      "gt_adults_range": [
+        2,
+        4
+      ],
+      "gt_children": 5,
+      "gt_children_range": [
+        4,
+        6
+      ],
+      "pred_adults": 3,
+      "pred_children": 8,
+      "adult_exact_match": true,
+      "adult_within_range": true,
+      "adult_within_1": true,
+      "child_exact_match": false,
+      "child_within_range": false,
+      "child_within_2": false,
+      "processing_time": 1.182086706161499,
+      "raw_response": "{\"adult_count\": 3, \"child_count\": 8}",
+      "notes": "Motion blur. Carla in foreground. Background activity areas partially visible.",
+      "compliance_flag": ""
+    },
+    {
+      "frame_name": "frame_000004.jpg",
+      "timestamp": "00:30",
+      "scene": "indoor_craft",
+      "difficulty": "easy",
+      "gt_adults": 3,
+      "gt_adults_range": [
+        3,
+        4
+      ],
+      "gt_children": 3,
+      "gt_children_range": [
+        2,
+        4
+      ],
+      "pred_adults": 3,
+      "pred_children": 3,
+      "adult_exact_match": true,
+      "adult_within_range": true,
+      "adult_within_1": true,
+      "child_exact_match": true,
+      "child_within_range": true,
+      "child_within_2": true,
+      "processing_time": 1.411975383758545,
+      "raw_response": "{\"adult_count\": 3, \"child_count\": 3}",
+      "notes": "Overhead angle at craft table. 2 TAFE students foreground, 1 adult background. 3 children visible.",
+      "compliance_flag": ""
+    },
+    {
+      "frame_name": "frame_000005.jpg",
+      "timestamp": "00:40",
+      "scene": "indoor_craft",
+      "difficulty": "hard",
+      "gt_adults": 6,
+      "gt_adults_range": [
+        5,
+        7
+      ],
+      "gt_children": 6,
+      "gt_children_range": [
+        5,
+        7
+      ],
+      "pred_adults": 4,
+      "pred_children": 6,
+      "adult_exact_match": false,
+      "adult_within_range": false,
+      "adult_within_1": false,
+      "child_exact_match": true,
+      "child_within_range": true,
+      "child_within_2": true,
+      "processing_time": 1.3573594093322754,
+      "raw_response": "{\"adult_count\": 4, \"child_count\": 6}",
+      "notes": "Wide shot with many people. Multiple activity stations. Adults in background easily missed.",
+      "compliance_flag": ""
+    },
+    {
+      "frame_name": "frame_000006.jpg",
+      "timestamp": "00:50",
+      "scene": "indoor_craft",
+      "difficulty": "medium",
+      "gt_adults": 4,
+      "gt_adults_range": [
+        4,
+        5
+      ],
+      "gt_children": 5,
+      "gt_children_range": [
+        4,
+        6
+      ],
+      "pred_adults": 3,
+      "pred_children": 8,
+      "adult_exact_match": false,
+      "adult_within_range": false,
+      "adult_within_1": true,
+      "child_exact_match": false,
+      "child_within_range": false,
+      "child_within_2": false,
+      "processing_time": 1.2419261932373047,
+      "raw_response": "{\"adult_count\": 3, \"child_count\": 8}",
+      "notes": "Craft activity. Carla + 3-4 other adults. Children at table with playdough.",
+      "compliance_flag": ""
+    },
+    {
+      "frame_name": "frame_000007.jpg",
+      "timestamp": "01:00",
+      "scene": "indoor_craft",
+      "difficulty": "medium",
+      "gt_adults": 4,
+      "gt_adults_range": [
+        3,
+        5
+      ],
+      "gt_children": 6,
+      "gt_children_range": [
+        5,
+        7
+      ],
+      "pred_adults": 4,
+      "pred_children": 7,
+      "adult_exact_match": true,
+      "adult_within_range": true,
+      "adult_within_1": true,
+      "child_exact_match": false,
+      "child_within_range": true,
+      "child_within_2": true,
+      "processing_time": 1.3635759353637695,
+      "raw_response": "{\"adult_count\": 4, \"child_count\": 7}",
+      "notes": "Similar angle to frame 8. Background table with children clearly visible.",
+      "compliance_flag": ""
+    },
+    {
+      "frame_name": "frame_000008.jpg",
+      "timestamp": "01:10",
+      "scene": "indoor_craft",
+      "difficulty": "medium",
+      "gt_adults": 3,
+      "gt_adults_range": [
+        3,
+        4
+      ],
+      "gt_children": 6,
+      "gt_children_range": [
+        5,
+        7
+      ],
+      "pred_adults": 3,
+      "pred_children": 6,
+      "adult_exact_match": true,
+      "adult_within_range": true,
+      "adult_within_1": true,
+      "child_exact_match": true,
+      "child_within_range": true,
+      "child_within_2": true,
+      "processing_time": 1.356947660446167,
+      "raw_response": "{\"adult_count\": 3, \"child_count\": 6}",
+      "notes": "Carla centred. Background activity with 1 adult and 4-5 children at table.",
+      "compliance_flag": ""
+    },
+    {
+      "frame_name": "frame_000009.jpg",
+      "timestamp": "01:20",
+      "scene": "outdoor_amphitheatre",
+      "difficulty": "easy",
+      "gt_adults": 0,
+      "gt_adults_range": [
+        0,
+        0
+      ],
+      "gt_children": 1,
+      "gt_children_range": [
+        1,
+        1
+      ],
+      "pred_adults": 0,
+      "pred_children": 1,
+      "adult_exact_match": true,
+      "adult_within_range": true,
+      "adult_within_1": true,
+      "child_exact_match": true,
+      "child_within_range": true,
+      "child_within_2": true,
+      "processing_time": 1.1763710975646973,
+      "raw_response": "{\"adult_count\": 0, \"child_count\": 1}",
+      "notes": "SUPERVISION CONCERN: Toddler alone on steps. No adults visible in frame.",
+      "compliance_flag": "potential_supervision_gap"
+    },
+    {
+      "frame_name": "frame_000010.jpg",
+      "timestamp": "01:30",
+      "scene": "indoor_craft",
+      "difficulty": "easy",
+      "gt_adults": 0,
+      "gt_adults_range": [
+        0,
+        1
+      ],
+      "gt_children": 1,
+      "gt_children_range": [
+        1,
+        1
+      ],
+      "pred_adults": 0,
+      "pred_children": 1,
+      "adult_exact_match": true,
+      "adult_within_range": true,
+      "adult_within_1": true,
+      "child_exact_match": true,
+      "child_within_range": true,
+      "child_within_2": true,
+      "processing_time": 1.3696064949035645,
+      "raw_response": "{\"adult_count\": 0, \"child_count\": 1}",
+      "notes": "Child alone at craft table. Adult legs barely visible at far right edge.",
+      "compliance_flag": ""
+    },
+    {
+      "frame_name": "frame_000011.jpg",
+      "timestamp": "01:40",
+      "scene": "outdoor_playground",
+      "difficulty": "medium",
+      "gt_adults": 1,
+      "gt_adults_range": [
+        1,
+        1
+      ],
+      "gt_children": 0,
+      "gt_children_range": [
+        0,
+        0
+      ],
+      "pred_adults": 0,
+      "pred_children": 0,
+      "adult_exact_match": false,
+      "adult_within_range": false,
+      "adult_within_1": true,
+      "child_exact_match": true,
+      "child_within_range": true,
+      "child_within_2": true,
+      "processing_time": 1.3581211566925049,
+      "raw_response": "{\"adult_count\": 0, \"child_count\": 0}",
+      "notes": "Carla from behind overlooking empty playground. Back-turned adult detection test.",
+      "compliance_flag": ""
+    },
+    {
+      "frame_name": "frame_000012.jpg",
+      "timestamp": "01:50",
+      "scene": "outdoor_playground",
+      "difficulty": "easy",
+      "gt_adults": 0,
+      "gt_adults_range": [
+        0,
+        0
+      ],
+      "gt_children": 0,
+      "gt_children_range": [
+        0,
+        0
+      ],
+      "pred_adults": 0,
+      "pred_children": 0,
+      "adult_exact_match": true,
+      "adult_within_range": true,
+      "adult_within_1": true,
+      "child_exact_match": true,
+      "child_within_range": true,
+      "child_within_2": true,
+      "processing_time": 1.2708890438079834,
+      "raw_response": "{\"adult_count\": 0, \"child_count\": 0}",
+      "notes": "Empty playground with teepee. No people visible. Empty scene test.",
+      "compliance_flag": ""
+    },
+    {
+      "frame_name": "frame_000013.jpg",
+      "timestamp": "02:00",
+      "scene": "outdoor_sandpit",
+      "difficulty": "medium",
+      "gt_adults": 2,
+      "gt_adults_range": [
+        1,
+        2
+      ],
+      "gt_children": 1,
+      "gt_children_range": [
+        1,
+        1
+      ],
+      "pred_adults": 1,
+      "pred_children": 1,
+      "adult_exact_match": false,
+      "adult_within_range": true,
+      "adult_within_1": true,
+      "child_exact_match": true,
+      "child_within_range": true,
+      "child_within_2": true,
+      "processing_time": 1.3575866222381592,
+      "raw_response": "{\"adult_count\": 1, \"child_count\": 1}",
+      "notes": "Sandpit play. Carla kneeling + second adult partially visible at right edge.",
+      "compliance_flag": ""
+    },
+    {
+      "frame_name": "frame_000014.jpg",
+      "timestamp": "02:10",
+      "scene": "outdoor_fence",
+      "difficulty": "easy",
+      "gt_adults": 0,
+      "gt_adults_range": [
+        0,
+        0
+      ],
+      "gt_children": 1,
+      "gt_children_range": [
+        1,
+        1
+      ],
+      "pred_adults": 0,
+      "pred_children": 1,
+      "adult_exact_match": true,
+      "adult_within_range": true,
+      "adult_within_1": true,
+      "child_exact_match": true,
+      "child_within_range": true,
+      "child_within_2": true,
+      "processing_time": 1.1811435222625732,
+      "raw_response": "{\"adult_count\": 0, \"child_count\": 1}",
+      "notes": "Motion blur. Child running past colourful fence. No adults visible.",
+      "compliance_flag": ""
+    }
+  ]
+}

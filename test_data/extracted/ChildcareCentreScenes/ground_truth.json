@@ -1,0 +1,170 @@
+{
+  "video_source": "ChildcareCentreScenes.mp4",
+  "annotated_by": "manual_review",
+  "annotation_date": "2025-12-29",
+  "notes": "TAFE NSW Graduate Tour - Early Childhood Education. Mix of indoor classroom and outdoor playground scenes.",
+  "frames": {
+    "frame_000001.jpg": {
+      "timestamp": "00:00",
+      "adults": 4,
+      "adults_range": [3, 5],
+      "children": 7,
+      "children_range": [6, 8],
+      "scene": "indoor_classroom",
+      "difficulty": "hard",
+      "notes": "Wide shot with title overlay obscuring some people. Multiple activity areas."
+    },
+    "frame_000002.jpg": {
+      "timestamp": "00:10",
+      "adults": 5,
+      "adults_range": [4, 5],
+      "children": 6,
+      "children_range": [5, 7],
+      "scene": "indoor_classroom",
+      "difficulty": "medium",
+      "notes": "Clear shot. 3 TAFE students in uniform + 2 other adults. 6 toddlers at tables."
+    },
+    "frame_000003.jpg": {
+      "timestamp": "00:20",
+      "adults": 3,
+      "adults_range": [2, 4],
+      "children": 5,
+      "children_range": [4, 6],
+      "scene": "indoor_classroom",
+      "difficulty": "hard",
+      "notes": "Motion blur. Carla in foreground. Background activity areas partially visible."
+    },
+    "frame_000004.jpg": {
+      "timestamp": "00:30",
+      "adults": 3,
+      "adults_range": [3, 4],
+      "children": 3,
+      "children_range": [2, 4],
+      "scene": "indoor_craft",
+      "difficulty": "easy",
+      "notes": "Overhead angle at craft table. 2 TAFE students foreground, 1 adult background. 3 children visible."
+    },
+    "frame_000005.jpg": {
+      "timestamp": "00:40",
+      "adults": 6,
+      "adults_range": [5, 7],
+      "children": 6,
+      "children_range": [5, 7],
+      "scene": "indoor_craft",
+      "difficulty": "hard",
+      "notes": "Wide shot with many people. Multiple activity stations. Adults in background easily missed."
+    },
+    "frame_000006.jpg": {
+      "timestamp": "00:50",
+      "adults": 4,
+      "adults_range": [4, 5],
+      "children": 5,
+      "children_range": [4, 6],
+      "scene": "indoor_craft",
+      "difficulty": "medium",
+      "notes": "Craft activity. Carla + 3-4 other adults. Children at table with playdough."
+    },
+    "frame_000007.jpg": {
+      "timestamp": "01:00",
+      "adults": 4,
+      "adults_range": [3, 5],
+      "children": 6,
+      "children_range": [5, 7],
+      "scene": "indoor_craft",
+      "difficulty": "medium",
+      "notes": "Similar angle to frame 8. Background table with children clearly visible."
+    },
+    "frame_000008.jpg": {
+      "timestamp": "01:10",
+      "adults": 3,
+      "adults_range": [3, 4],
+      "children": 6,
+      "children_range": [5, 7],
+      "scene": "indoor_craft",
+      "difficulty": "medium",
+      "notes": "Carla centred. Background activity with 1 adult and 4-5 children at table."
+    },
+    "frame_000009.jpg": {
+      "timestamp": "01:20",
+      "adults": 0,
+      "adults_range": [0, 0],
+      "children": 1,
+      "children_range": [1, 1],
+      "scene": "outdoor_amphitheatre",
+      "difficulty": "easy",
+      "notes": "SUPERVISION CONCERN: Toddler alone on steps. No adults visible in frame.",
+      "compliance_flag": "potential_supervision_gap"
+    },
+    "frame_000010.jpg": {
+      "timestamp": "01:30",
+      "adults": 0,
+      "adults_range": [0, 1],
+      "children": 1,
+      "children_range": [1, 1],
+      "scene": "indoor_craft",
+      "difficulty": "easy",
+      "notes": "Child alone at craft table. Adult legs barely visible at far right edge."
+    },
+    "frame_000011.jpg": {
+      "timestamp": "01:40",
+      "adults": 1,
+      "adults_range": [1, 1],
+      "children": 0,
+      "children_range": [0, 0],
+      "scene": "outdoor_playground",
+      "difficulty": "medium",
+      "notes": "Carla from behind overlooking empty playground. Back-turned adult detection test."
+    },
+    "frame_000012.jpg": {
+      "timestamp": "01:50",
+      "adults": 0,
+      "adults_range": [0, 0],
+      "children": 0,
+      "children_range": [0, 0],
+      "scene": "outdoor_playground",
+      "difficulty": "easy",
+      "notes": "Empty playground with teepee. No people visible. Empty scene test."
+    },
+    "frame_000013.jpg": {
+      "timestamp": "02:00",
+      "adults": 2,
+      "adults_range": [1, 2],
+      "children": 1,
+      "children_range": [1, 1],
+      "scene": "outdoor_sandpit",
+      "difficulty": "medium",
+      "notes": "Sandpit play. Carla kneeling + second adult partially visible at right edge."
+    },
+    "frame_000014.jpg": {
+      "timestamp": "02:10",
+      "adults": 0,
+      "adults_range": [0, 0],
+      "children": 1,
+      "children_range": [1, 1],
+      "scene": "outdoor_fence",
+      "difficulty": "easy",
+      "notes": "Motion blur. Child running past colourful fence. No adults visible."
+    }
+  },
+  "summary": {
+    "total_frames": 14,
+    "difficulty_distribution": {
+      "easy": 5,
+      "medium": 5,
+      "hard": 4
+    },
+    "scene_types": {
+      "indoor_classroom": 3,
+      "indoor_craft": 5,
+      "outdoor_amphitheatre": 1,
+      "outdoor_playground": 2,
+      "outdoor_sandpit": 1,
+      "outdoor_fence": 1
+    },
+    "compliance_scenarios": {
+      "potential_supervision_gap": 1,
+      "empty_scene": 1,
+      "back_turned_adult": 1
+    }
+  }
+}

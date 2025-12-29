@@ -1,0 +1,87 @@
+{
+  "source_video": "test_data/videos/ChildcareCentreScenes.mp4",
+  "extraction_time": "2025-12-29T05:07:27.333952",
+  "interval_seconds": 10.0,
+  "video_info": {
+    "duration": 139.920227,
+    "width": 1280,
+    "height": 720,
+    "fps": 50.0,
+    "codec": "h264",
+    "filename": "test_data/videos/ChildcareCentreScenes.mp4",
+    "size_bytes": 59828967
+  },
+  "num_frames": 14,
+  "frames": [
+    {
+      "filename": "frame_000001.jpg",
+      "timestamp_seconds": 0.0,
+      "timestamp_formatted": "00:00"
+    },
+    {
+      "filename": "frame_000002.jpg",
+      "timestamp_seconds": 10.0,
+      "timestamp_formatted": "00:10"
+    },
+    {
+      "filename": "frame_000003.jpg",
+      "timestamp_seconds": 20.0,
+      "timestamp_formatted": "00:20"
+    },
+    {
+      "filename": "frame_000004.jpg",
+      "timestamp_seconds": 30.0,
+      "timestamp_formatted": "00:30"
+    },
+    {
+      "filename": "frame_000005.jpg",
+      "timestamp_seconds": 40.0,
+      "timestamp_formatted": "00:40"
+    },
+    {
+      "filename": "frame_000006.jpg",
+      "timestamp_seconds": 50.0,
+      "timestamp_formatted": "00:50"
+    },
+    {
+      "filename": "frame_000007.jpg",
+      "timestamp_seconds": 60.0,
+      "timestamp_formatted": "01:00"
+    },
+    {
+      "filename": "frame_000008.jpg",
+      "timestamp_seconds": 70.0,
+      "timestamp_formatted": "01:10"
+    },
+    {
+      "filename": "frame_000009.jpg",
+      "timestamp_seconds": 80.0,
+      "timestamp_formatted": "01:20"
+    },
+    {
+      "filename": "frame_000010.jpg",
+      "timestamp_seconds": 90.0,
+      "timestamp_formatted": "01:30"
+    },
+    {
+      "filename": "frame_000011.jpg",
+      "timestamp_seconds": 100.0,
+      "timestamp_formatted": "01:40"
+    },
+    {
+      "filename": "frame_000012.jpg",
+      "timestamp_seconds": 110.0,
+      "timestamp_formatted": "01:50"
+    },
+    {
+      "filename": "frame_000013.jpg",
+      "timestamp_seconds": 120.0,
+      "timestamp_formatted": "02:00"
+    },
+    {
+      "filename": "frame_000014.jpg",
+      "timestamp_seconds": 130.0,
+      "timestamp_formatted": "02:10"
+    }
+  ]
+}

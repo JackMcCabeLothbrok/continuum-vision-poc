@@ -1,0 +1,252 @@
+{
+  "pipeline_run_time": "2025-12-29T05:08:13.548237",
+  "frames_directory": "test_data/extracted/ChildcareCentreScenes",
+  "model": "meta/llama-3.2-11b-vision-instruct:shared",
+  "prompt": "Count the adults and children visible in this childcare image.\nRespond with JSON only: {\"adult_count\": X, \"child_count\": Y}",
+  "extraction_metadata": {
+    "source_video": "test_data/videos/ChildcareCentreScenes.mp4",
+    "extraction_time": "2025-12-29T05:07:27.333952",
+    "interval_seconds": 10.0,
+    "video_info": {
+      "duration": 139.920227,
+      "width": 1280,
+      "height": 720,
+      "fps": 50.0,
+      "codec": "h264",
+      "filename": "test_data/videos/ChildcareCentreScenes.mp4",
+      "size_bytes": 59828967
+    },
+    "num_frames": 14,
+    "frames": [
+      {
+        "filename": "frame_000001.jpg",
+        "timestamp_seconds": 0.0,
+        "timestamp_formatted": "00:00"
+      },
+      {
+        "filename": "frame_000002.jpg",
+        "timestamp_seconds": 10.0,
+        "timestamp_formatted": "00:10"
+      },
+      {
+        "filename": "frame_000003.jpg",
+        "timestamp_seconds": 20.0,
+        "timestamp_formatted": "00:20"
+      },
+      {
+        "filename": "frame_000004.jpg",
+        "timestamp_seconds": 30.0,
+        "timestamp_formatted": "00:30"
+      },
+      {
+        "filename": "frame_000005.jpg",
+        "timestamp_seconds": 40.0,
+        "timestamp_formatted": "00:40"
+      },
+      {
+        "filename": "frame_000006.jpg",
+        "timestamp_seconds": 50.0,
+        "timestamp_formatted": "00:50"
+      },
+      {
+        "filename": "frame_000007.jpg",
+        "timestamp_seconds": 60.0,
+        "timestamp_formatted": "01:00"
+      },
+      {
+        "filename": "frame_000008.jpg",
+        "timestamp_seconds": 70.0,
+        "timestamp_formatted": "01:10"
+      },
+      {
+        "filename": "frame_000009.jpg",
+        "timestamp_seconds": 80.0,
+        "timestamp_formatted": "01:20"
+      },
+      {
+        "filename": "frame_000010.jpg",
+        "timestamp_seconds": 90.0,
+        "timestamp_formatted": "01:30"
+      },
+      {
+        "filename": "frame_000011.jpg",
+        "timestamp_seconds": 100.0,
+        "timestamp_formatted": "01:40"
+      },
+      {
+        "filename": "frame_000012.jpg",
+        "timestamp_seconds": 110.0,
+        "timestamp_formatted": "01:50"
+      },
+      {
+        "filename": "frame_000013.jpg",
+        "timestamp_seconds": 120.0,
+        "timestamp_formatted": "02:00"
+      },
+      {
+        "filename": "frame_000014.jpg",
+        "timestamp_seconds": 130.0,
+        "timestamp_formatted": "02:10"
+      }
+    ]
+  },
+  "summary": {
+    "total_frames": 14,
+    "successful_analyses": 14,
+    "failed_analyses": 0,
+    "adult_count_range": [
+      0,
+      4
+    ],
+    "adult_count_avg": 1.9,
+    "child_count_range": [
+      0,
+      8
+    ],
+    "child_count_avg": 3.9,
+    "total_processing_time_seconds": 25.59,
+    "avg_time_per_frame_seconds": 1.83
+  },
+  "frame_results": [
+    {
+      "adult_count": 3,
+      "child_count": 7,
+      "raw_response": "{\"adult_count\": 3, \"child_count\": 7}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000001.jpg",
+      "frame_index": 0,
+      "timestamp": "00:00",
+      "processing_time_seconds": 2.06
+    },
+    {
+      "adult_count": 3,
+      "child_count": 6,
+      "raw_response": "{\"adult_count\": 3, \"child_count\": 6}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000002.jpg",
+      "frame_index": 1,
+      "timestamp": "00:10",
+      "processing_time_seconds": 1.38
+    },
+    {
+      "adult_count": 3,
+      "child_count": 8,
+      "raw_response": "{\"adult_count\": 3, \"child_count\": 8}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000003.jpg",
+      "frame_index": 2,
+      "timestamp": "00:20",
+      "processing_time_seconds": 1.23
+    },
+    {
+      "adult_count": 3,
+      "child_count": 3,
+      "raw_response": "{\"adult_count\": 3, \"child_count\": 3}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000004.jpg",
+      "frame_index": 3,
+      "timestamp": "00:30",
+      "processing_time_seconds": 1.36
+    },
+    {
+      "adult_count": 4,
+      "child_count": 6,
+      "raw_response": "{\"adult_count\": 4, \"child_count\": 6}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000005.jpg",
+      "frame_index": 4,
+      "timestamp": "00:40",
+      "processing_time_seconds": 1.37
+    },
+    {
+      "adult_count": 3,
+      "child_count": 8,
+      "raw_response": "{\"adult_count\": 3, \"child_count\": 8}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000006.jpg",
+      "frame_index": 5,
+      "timestamp": "00:50",
+      "processing_time_seconds": 1.2
+    },
+    {
+      "adult_count": 4,
+      "child_count": 7,
+      "raw_response": "{\"adult_count\": 4, \"child_count\": 7}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000007.jpg",
+      "frame_index": 6,
+      "timestamp": "01:00",
+      "processing_time_seconds": 1.38
+    },
+    {
+      "adult_count": 3,
+      "child_count": 6,
+      "raw_response": "{\"adult_count\": 3, \"child_count\": 6}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000008.jpg",
+      "frame_index": 7,
+      "timestamp": "01:10",
+      "processing_time_seconds": 1.37
+    },
+    {
+      "adult_count": 0,
+      "child_count": 1,
+      "raw_response": "{\"adult_count\": 0, \"child_count\": 1}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000009.jpg",
+      "frame_index": 8,
+      "timestamp": "01:20",
+      "processing_time_seconds": 1.21
+    },
+    {
+      "adult_count": 0,
+      "child_count": 1,
+      "raw_response": "{\"adult_count\": 0, \"child_count\": 1}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000010.jpg",
+      "frame_index": 9,
+      "timestamp": "01:30",
+      "processing_time_seconds": 1.37
+    },
+    {
+      "adult_count": 0,
+      "child_count": 0,
+      "raw_response": "{\"adult_count\": 0, \"child_count\": 0}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000011.jpg",
+      "frame_index": 10,
+      "timestamp": "01:40",
+      "processing_time_seconds": 1.35
+    },
+    {
+      "adult_count": 0,
+      "child_count": 0,
+      "raw_response": "{\"adult_count\": 0, \"child_count\": 0}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000012.jpg",
+      "frame_index": 11,
+      "timestamp": "01:50",
+      "processing_time_seconds": 1.27
+    },
+    {
+      "adult_count": 1,
+      "child_count": 1,
+      "raw_response": "{\"adult_count\": 1, \"child_count\": 1}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000013.jpg",
+      "frame_index": 12,
+      "timestamp": "02:00",
+      "processing_time_seconds": 1.37
+    },
+    {
+      "adult_count": 0,
+      "child_count": 1,
+      "raw_response": "{\"adult_count\": 0, \"child_count\": 1}",
+      "success": true,
+      "frame_path": "test_data/extracted/ChildcareCentreScenes/frame_000014.jpg",
+      "frame_index": 13,
+      "timestamp": "02:10",
+      "processing_time_seconds": 1.17
+    }
+  ]
+}
