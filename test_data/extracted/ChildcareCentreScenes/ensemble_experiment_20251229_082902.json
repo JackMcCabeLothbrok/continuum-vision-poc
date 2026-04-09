@@ -1,0 +1,1122 @@
+{
+  "experiment": "ensemble_verification",
+  "timestamp": "2025-12-29T08:29:02.039067",
+  "model": "meta/llama-3.2-11b-vision-instruct:shared",
+  "num_passes": 3,
+  "strategy": "vote",
+  "ensemble_metrics": {
+    "total_frames": 14,
+    "adult_exact_pct": 57.14285714285714,
+    "adult_within_1_pct": 85.71428571428571,
+    "child_exact_pct": 50.0,
+    "child_within_2_pct": 100.0,
+    "avg_time_seconds": 3.7780398641313826,
+    "avg_adult_variance": 0.0,
+    "avg_child_variance": 0.0,
+    "avg_adult_agreement": 100.0,
+    "avg_child_agreement": 100.0,
+    "zero_variance_pct": 100.0
+  },
+  "strategy_comparison": {
+    "first": {
+      "adult_within_1_pct": 85.71428571428571,
+      "child_within_2_pct": 100.0
+    },
+    "max": {
+      "adult_within_1_pct": 85.71428571428571,
+      "child_within_2_pct": 100.0
+    },
+    "min": {
+      "adult_within_1_pct": 85.71428571428571,
+      "child_within_2_pct": 100.0
+    },
+    "median": {
+      "adult_within_1_pct": 85.71428571428571,
+      "child_within_2_pct": 100.0
+    },
+    "average": {
+      "adult_within_1_pct": 85.71428571428571,
+      "child_within_2_pct": 100.0
+    },
+    "vote": {
+      "adult_within_1_pct": 85.71428571428571,
+      "child_within_2_pct": 100.0
+    }
+  },
+  "ensemble_results": [
+    {
+      "frame_name": "frame_000001.jpg",
+      "gt_adults": 4,
+      "gt_children": 7,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 4,
+          "children": 5,
+          "raw": "{\"adult_count\": 4, \"child_count\": 5}"
+        },
+        {
+          "pass": 2,
+          "adults": 4,
+          "children": 5,
+          "raw": "{\"adult_count\": 4, \"child_count\": 5}"
+        },
+        {
+          "pass": 3,
+          "adults": 4,
+          "children": 5,
+          "raw": "{\"adult_count\": 4, \"child_count\": 5}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 4,
+          "children": 5
+        },
+        "min": {
+          "adults": 4,
+          "children": 5
+        },
+        "median": {
+          "adults": 4,
+          "children": 5
+        },
+        "average": {
+          "adults": 4,
+          "children": 5
+        },
+        "vote": {
+          "adults": 4,
+          "children": 5
+        },
+        "first": {
+          "adults": 4,
+          "children": 5
+        }
+      },
+      "pred_adults": 4,
+      "pred_children": 5,
+      "strategy_used": "vote",
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 4.359179973602295,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000002.jpg",
+      "gt_adults": 5,
+      "gt_children": 6,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 2,
+          "children": 5,
+          "raw": "{\"adult_count\": 2, \"child_count\": 5}"
+        },
+        {
+          "pass": 2,
+          "adults": 2,
+          "children": 5,
+          "raw": "{\"adult_count\": 2, \"child_count\": 5}"
+        },
+        {
+          "pass": 3,
+          "adults": 2,
+          "children": 5,
+          "raw": "{\"adult_count\": 2, \"child_count\": 5}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 2,
+          "children": 5
+        },
+        "min": {
+          "adults": 2,
+          "children": 5
+        },
+        "median": {
+          "adults": 2,
+          "children": 5
+        },
+        "average": {
+          "adults": 2,
+          "children": 5
+        },
+        "vote": {
+          "adults": 2,
+          "children": 5
+        },
+        "first": {
+          "adults": 2,
+          "children": 5
+        }
+      },
+      "pred_adults": 2,
+      "pred_children": 5,
+      "strategy_used": "vote",
+      "adult_exact": false,
+      "adult_within_1": false,
+      "child_exact": false,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.9072446823120117,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000003.jpg",
+      "gt_adults": 3,
+      "gt_children": 5,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 2,
+          "children": 6,
+          "raw": "{\"adult_count\": 2, \"child_count\": 6}"
+        },
+        {
+          "pass": 2,
+          "adults": 2,
+          "children": 6,
+          "raw": "{\"adult_count\": 2, \"child_count\": 6}"
+        },
+        {
+          "pass": 3,
+          "adults": 2,
+          "children": 6,
+          "raw": "{\"adult_count\": 2, \"child_count\": 6}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 2,
+          "children": 6
+        },
+        "min": {
+          "adults": 2,
+          "children": 6
+        },
+        "median": {
+          "adults": 2,
+          "children": 6
+        },
+        "average": {
+          "adults": 2,
+          "children": 6
+        },
+        "vote": {
+          "adults": 2,
+          "children": 6
+        },
+        "first": {
+          "adults": 2,
+          "children": 6
+        }
+      },
+      "pred_adults": 2,
+      "pred_children": 6,
+      "strategy_used": "vote",
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.465263605117798,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000004.jpg",
+      "gt_adults": 3,
+      "gt_children": 3,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 3,
+          "children": 3,
+          "raw": "{\"adult_count\": 3, \"child_count\": 3}"
+        },
+        {
+          "pass": 2,
+          "adults": 3,
+          "children": 3,
+          "raw": "{\"adult_count\": 3, \"child_count\": 3}"
+        },
+        {
+          "pass": 3,
+          "adults": 3,
+          "children": 3,
+          "raw": "{\"adult_count\": 3, \"child_count\": 3}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 3,
+          "children": 3
+        },
+        "min": {
+          "adults": 3,
+          "children": 3
+        },
+        "median": {
+          "adults": 3,
+          "children": 3
+        },
+        "average": {
+          "adults": 3,
+          "children": 3
+        },
+        "vote": {
+          "adults": 3,
+          "children": 3
+        },
+        "first": {
+          "adults": 3,
+          "children": 3
+        }
+      },
+      "pred_adults": 3,
+      "pred_children": 3,
+      "strategy_used": "vote",
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.813342571258545,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000005.jpg",
+      "gt_adults": 6,
+      "gt_children": 6,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 4,
+          "children": 4,
+          "raw": "{\"adult_count\": 4, \"child_count\": 4}"
+        },
+        {
+          "pass": 2,
+          "adults": 4,
+          "children": 4,
+          "raw": "{\"adult_count\": 4, \"child_count\": 4}"
+        },
+        {
+          "pass": 3,
+          "adults": 4,
+          "children": 4,
+          "raw": "{\"adult_count\": 4, \"child_count\": 4}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 4,
+          "children": 4
+        },
+        "min": {
+          "adults": 4,
+          "children": 4
+        },
+        "median": {
+          "adults": 4,
+          "children": 4
+        },
+        "average": {
+          "adults": 4,
+          "children": 4
+        },
+        "vote": {
+          "adults": 4,
+          "children": 4
+        },
+        "first": {
+          "adults": 4,
+          "children": 4
+        }
+      },
+      "pred_adults": 4,
+      "pred_children": 4,
+      "strategy_used": "vote",
+      "adult_exact": false,
+      "adult_within_1": false,
+      "child_exact": false,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.772139549255371,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000006.jpg",
+      "gt_adults": 4,
+      "gt_children": 5,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 3,
+          "children": 6,
+          "raw": "{\"adult_count\": 3, \"child_count\": 6}"
+        },
+        {
+          "pass": 2,
+          "adults": 3,
+          "children": 6,
+          "raw": "{\"adult_count\": 3, \"child_count\": 6}"
+        },
+        {
+          "pass": 3,
+          "adults": 3,
+          "children": 6,
+          "raw": "{\"adult_count\": 3, \"child_count\": 6}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 3,
+          "children": 6
+        },
+        "min": {
+          "adults": 3,
+          "children": 6
+        },
+        "median": {
+          "adults": 3,
+          "children": 6
+        },
+        "average": {
+          "adults": 3,
+          "children": 6
+        },
+        "vote": {
+          "adults": 3,
+          "children": 6
+        },
+        "first": {
+          "adults": 3,
+          "children": 6
+        }
+      },
+      "pred_adults": 3,
+      "pred_children": 6,
+      "strategy_used": "vote",
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.922771453857422,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000007.jpg",
+      "gt_adults": 4,
+      "gt_children": 6,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 4,
+          "children": 5,
+          "raw": "{\"adult_count\": 4, \"child_count\": 5}"
+        },
+        {
+          "pass": 2,
+          "adults": 4,
+          "children": 5,
+          "raw": "{\"adult_count\": 4, \"child_count\": 5}"
+        },
+        {
+          "pass": 3,
+          "adults": 4,
+          "children": 5,
+          "raw": "{\"adult_count\": 4, \"child_count\": 5}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 4,
+          "children": 5
+        },
+        "min": {
+          "adults": 4,
+          "children": 5
+        },
+        "median": {
+          "adults": 4,
+          "children": 5
+        },
+        "average": {
+          "adults": 4,
+          "children": 5
+        },
+        "vote": {
+          "adults": 4,
+          "children": 5
+        },
+        "first": {
+          "adults": 4,
+          "children": 5
+        }
+      },
+      "pred_adults": 4,
+      "pred_children": 5,
+      "strategy_used": "vote",
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.807837963104248,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000008.jpg",
+      "gt_adults": 3,
+      "gt_children": 6,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 3,
+          "children": 5,
+          "raw": "{\"adult_count\": 3, \"child_count\": 5}"
+        },
+        {
+          "pass": 2,
+          "adults": 3,
+          "children": 5,
+          "raw": "{\"adult_count\": 3, \"child_count\": 5}"
+        },
+        {
+          "pass": 3,
+          "adults": 3,
+          "children": 5,
+          "raw": "{\"adult_count\": 3, \"child_count\": 5}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 3,
+          "children": 5
+        },
+        "min": {
+          "adults": 3,
+          "children": 5
+        },
+        "median": {
+          "adults": 3,
+          "children": 5
+        },
+        "average": {
+          "adults": 3,
+          "children": 5
+        },
+        "vote": {
+          "adults": 3,
+          "children": 5
+        },
+        "first": {
+          "adults": 3,
+          "children": 5
+        }
+      },
+      "pred_adults": 3,
+      "pred_children": 5,
+      "strategy_used": "vote",
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.7382473945617676,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000009.jpg",
+      "gt_adults": 0,
+      "gt_children": 1,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 0,
+          "children": 1,
+          "raw": "{\"adult_count\": 0, \"child_count\": 1}"
+        },
+        {
+          "pass": 2,
+          "adults": 0,
+          "children": 1,
+          "raw": "{\"adult_count\": 0, \"child_count\": 1}"
+        },
+        {
+          "pass": 3,
+          "adults": 0,
+          "children": 1,
+          "raw": "{\"adult_count\": 0, \"child_count\": 1}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 0,
+          "children": 1
+        },
+        "min": {
+          "adults": 0,
+          "children": 1
+        },
+        "median": {
+          "adults": 0,
+          "children": 1
+        },
+        "average": {
+          "adults": 0,
+          "children": 1
+        },
+        "vote": {
+          "adults": 0,
+          "children": 1
+        },
+        "first": {
+          "adults": 0,
+          "children": 1
+        }
+      },
+      "pred_adults": 0,
+      "pred_children": 1,
+      "strategy_used": "vote",
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.3670194149017334,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000010.jpg",
+      "gt_adults": 0,
+      "gt_children": 1,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 1,
+          "children": 1,
+          "raw": "{\"adult_count\": 1, \"child_count\": 1}"
+        },
+        {
+          "pass": 2,
+          "adults": 1,
+          "children": 1,
+          "raw": "{\"adult_count\": 1, \"child_count\": 1}"
+        },
+        {
+          "pass": 3,
+          "adults": 1,
+          "children": 1,
+          "raw": "{\"adult_count\": 1, \"child_count\": 1}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 1,
+          "children": 1
+        },
+        "min": {
+          "adults": 1,
+          "children": 1
+        },
+        "median": {
+          "adults": 1,
+          "children": 1
+        },
+        "average": {
+          "adults": 1,
+          "children": 1
+        },
+        "vote": {
+          "adults": 1,
+          "children": 1
+        },
+        "first": {
+          "adults": 1,
+          "children": 1
+        }
+      },
+      "pred_adults": 1,
+      "pred_children": 1,
+      "strategy_used": "vote",
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.8341519832611084,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000011.jpg",
+      "gt_adults": 1,
+      "gt_children": 0,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 1,
+          "children": 0,
+          "raw": "{\"adult_count\": 1, \"child_count\": 0}"
+        },
+        {
+          "pass": 2,
+          "adults": 1,
+          "children": 0,
+          "raw": "{\"adult_count\": 1, \"child_count\": 0}"
+        },
+        {
+          "pass": 3,
+          "adults": 1,
+          "children": 0,
+          "raw": "{\"adult_count\": 1, \"child_count\": 0}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 1,
+          "children": 0
+        },
+        "min": {
+          "adults": 1,
+          "children": 0
+        },
+        "median": {
+          "adults": 1,
+          "children": 0
+        },
+        "average": {
+          "adults": 1,
+          "children": 0
+        },
+        "vote": {
+          "adults": 1,
+          "children": 0
+        },
+        "first": {
+          "adults": 1,
+          "children": 0
+        }
+      },
+      "pred_adults": 1,
+      "pred_children": 0,
+      "strategy_used": "vote",
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.792200803756714,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000012.jpg",
+      "gt_adults": 0,
+      "gt_children": 0,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 0,
+          "children": 0,
+          "raw": "{\"adult_count\": 0, \"child_count\": 0}"
+        },
+        {
+          "pass": 2,
+          "adults": 0,
+          "children": 0,
+          "raw": "{\"adult_count\": 0, \"child_count\": 0}"
+        },
+        {
+          "pass": 3,
+          "adults": 0,
+          "children": 0,
+          "raw": "{\"adult_count\": 0, \"child_count\": 0}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 0,
+          "children": 0
+        },
+        "min": {
+          "adults": 0,
+          "children": 0
+        },
+        "median": {
+          "adults": 0,
+          "children": 0
+        },
+        "average": {
+          "adults": 0,
+          "children": 0
+        },
+        "vote": {
+          "adults": 0,
+          "children": 0
+        },
+        "first": {
+          "adults": 0,
+          "children": 0
+        }
+      },
+      "pred_adults": 0,
+      "pred_children": 0,
+      "strategy_used": "vote",
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.8413379192352295,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000013.jpg",
+      "gt_adults": 2,
+      "gt_children": 1,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 1,
+          "children": 1,
+          "raw": "{\"adult_count\": 1, \"child_count\": 1}"
+        },
+        {
+          "pass": 2,
+          "adults": 1,
+          "children": 1,
+          "raw": "{\"adult_count\": 1, \"child_count\": 1}"
+        },
+        {
+          "pass": 3,
+          "adults": 1,
+          "children": 1,
+          "raw": "{\"adult_count\": 1, \"child_count\": 1}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 1,
+          "children": 1
+        },
+        "min": {
+          "adults": 1,
+          "children": 1
+        },
+        "median": {
+          "adults": 1,
+          "children": 1
+        },
+        "average": {
+          "adults": 1,
+          "children": 1
+        },
+        "vote": {
+          "adults": 1,
+          "children": 1
+        },
+        "first": {
+          "adults": 1,
+          "children": 1
+        }
+      },
+      "pred_adults": 1,
+      "pred_children": 1,
+      "strategy_used": "vote",
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.8084893226623535,
+      "num_passes": 3
+    },
+    {
+      "frame_name": "frame_000014.jpg",
+      "gt_adults": 0,
+      "gt_children": 1,
+      "pass_results": [
+        {
+          "pass": 1,
+          "adults": 0,
+          "children": 1,
+          "raw": "{\"adult_count\": 0, \"child_count\": 1}"
+        },
+        {
+          "pass": 2,
+          "adults": 0,
+          "children": 1,
+          "raw": "{\"adult_count\": 0, \"child_count\": 1}"
+        },
+        {
+          "pass": 3,
+          "adults": 0,
+          "children": 1,
+          "raw": "{\"adult_count\": 0, \"child_count\": 1}"
+        }
+      ],
+      "strategies": {
+        "max": {
+          "adults": 0,
+          "children": 1
+        },
+        "min": {
+          "adults": 0,
+          "children": 1
+        },
+        "median": {
+          "adults": 0,
+          "children": 1
+        },
+        "average": {
+          "adults": 0,
+          "children": 1
+        },
+        "vote": {
+          "adults": 0,
+          "children": 1
+        },
+        "first": {
+          "adults": 0,
+          "children": 1
+        }
+      },
+      "pred_adults": 0,
+      "pred_children": 1,
+      "strategy_used": "vote",
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "adult_variance": 0,
+      "child_variance": 0,
+      "adult_agreement": 100.0,
+      "child_agreement": 100.0,
+      "processing_time": 3.463331460952759,
+      "num_passes": 3
+    }
+  ],
+  "baseline_metrics": {
+    "total_frames": 14,
+    "adult_exact_pct": 57.14285714285714,
+    "adult_within_1_pct": 85.71428571428571,
+    "child_exact_pct": 50.0,
+    "child_within_2_pct": 100.0,
+    "avg_time_seconds": 1.3389512811388289
+  },
+  "baseline_results": [
+    {
+      "frame_name": "frame_000001.jpg",
+      "gt_adults": 4,
+      "gt_children": 7,
+      "pred_adults": 4,
+      "pred_children": 5,
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "processing_time": 1.2237722873687744
+    },
+    {
+      "frame_name": "frame_000002.jpg",
+      "gt_adults": 5,
+      "gt_children": 6,
+      "pred_adults": 2,
+      "pred_children": 5,
+      "adult_exact": false,
+      "adult_within_1": false,
+      "child_exact": false,
+      "child_within_2": true,
+      "processing_time": 1.3762025833129883
+    },
+    {
+      "frame_name": "frame_000003.jpg",
+      "gt_adults": 3,
+      "gt_children": 5,
+      "pred_adults": 2,
+      "pred_children": 6,
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "processing_time": 1.1751255989074707
+    },
+    {
+      "frame_name": "frame_000004.jpg",
+      "gt_adults": 3,
+      "gt_children": 3,
+      "pred_adults": 3,
+      "pred_children": 3,
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "processing_time": 1.3707149028778076
+    },
+    {
+      "frame_name": "frame_000005.jpg",
+      "gt_adults": 6,
+      "gt_children": 6,
+      "pred_adults": 4,
+      "pred_children": 4,
+      "adult_exact": false,
+      "adult_within_1": false,
+      "child_exact": false,
+      "child_within_2": true,
+      "processing_time": 1.350106954574585
+    },
+    {
+      "frame_name": "frame_000006.jpg",
+      "gt_adults": 4,
+      "gt_children": 5,
+      "pred_adults": 3,
+      "pred_children": 6,
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "processing_time": 1.2200844287872314
+    },
+    {
+      "frame_name": "frame_000007.jpg",
+      "gt_adults": 4,
+      "gt_children": 6,
+      "pred_adults": 4,
+      "pred_children": 5,
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "processing_time": 1.7046663761138916
+    },
+    {
+      "frame_name": "frame_000008.jpg",
+      "gt_adults": 3,
+      "gt_children": 6,
+      "pred_adults": 3,
+      "pred_children": 5,
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "processing_time": 1.4240918159484863
+    },
+    {
+      "frame_name": "frame_000009.jpg",
+      "gt_adults": 0,
+      "gt_children": 1,
+      "pred_adults": 0,
+      "pred_children": 1,
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "processing_time": 1.2345452308654785
+    },
+    {
+      "frame_name": "frame_000010.jpg",
+      "gt_adults": 0,
+      "gt_children": 1,
+      "pred_adults": 1,
+      "pred_children": 1,
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "processing_time": 1.4555385112762451
+    },
+    {
+      "frame_name": "frame_000011.jpg",
+      "gt_adults": 1,
+      "gt_children": 0,
+      "pred_adults": 1,
+      "pred_children": 0,
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "processing_time": 1.3554558753967285
+    },
+    {
+      "frame_name": "frame_000012.jpg",
+      "gt_adults": 0,
+      "gt_children": 0,
+      "pred_adults": 0,
+      "pred_children": 0,
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "processing_time": 1.2417964935302734
+    },
+    {
+      "frame_name": "frame_000013.jpg",
+      "gt_adults": 2,
+      "gt_children": 1,
+      "pred_adults": 1,
+      "pred_children": 1,
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "processing_time": 1.387244462966919
+    },
+    {
+      "frame_name": "frame_000014.jpg",
+      "gt_adults": 0,
+      "gt_children": 1,
+      "pred_adults": 0,
+      "pred_children": 1,
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "processing_time": 1.2259724140167236
+    }
+  ]
+}

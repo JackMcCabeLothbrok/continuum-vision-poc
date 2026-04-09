@@ -1,0 +1,316 @@
+{
+  "experiment": "multi_frame_temporal_analysis",
+  "timestamp": "2025-12-29T08:18:43.619916",
+  "model": "meta/llama-3.2-11b-vision-instruct:shared",
+  "multiframe_metrics": {
+    "total_windows": 6,
+    "adult_exact_pct": 16.666666666666664,
+    "adult_within_1_pct": 100.0,
+    "child_exact_pct": 33.33333333333333,
+    "child_within_2_pct": 83.33333333333334,
+    "avg_time_seconds": 4.125145196914673,
+    "confidence_correlation": {
+      "high_confidence_accuracy": 100.0,
+      "low_confidence_accuracy": 100.0,
+      "high_confidence_count": 3,
+      "low_confidence_count": 1
+    }
+  },
+  "multiframe_results": [
+    {
+      "window_id": 1,
+      "frame_names": [
+        "frame_000001.jpg",
+        "frame_000002.jpg",
+        "frame_000003.jpg"
+      ],
+      "gt_adults": 5,
+      "gt_children": 6,
+      "per_frame_counts": [
+        {
+          "adults": 4,
+          "children": 5,
+          "raw": "{\"adult_count\": 4, \"child_count\": 5}"
+        },
+        {
+          "adults": 2,
+          "children": 5,
+          "raw": "{\"adult_count\": 2, \"child_count\": 5}"
+        },
+        {
+          "adults": 2,
+          "children": 6,
+          "raw": "{\"adult_count\": 2, \"child_count\": 6}"
+        }
+      ],
+      "pred_adults": 4,
+      "pred_children": 6,
+      "adult_confidence": "medium",
+      "child_confidence": "high",
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "processing_time": 4.476861238479614,
+      "reasoning": "Processed 3 frames. Adult counts: [4, 2, 2], Child counts: [5, 5, 6]",
+      "raw_response": "{\"max\": {\"adults\": 4, \"children\": 6}, \"median\": {\"adults\": 2, \"children\": 5}, \"average\": {\"adults\": 3, \"children\": 5}, \"mode\": {\"adults\": 2, \"children\": 5}}"
+    },
+    {
+      "window_id": 2,
+      "frame_names": [
+        "frame_000003.jpg",
+        "frame_000004.jpg",
+        "frame_000005.jpg"
+      ],
+      "gt_adults": 3,
+      "gt_children": 3,
+      "per_frame_counts": [
+        {
+          "adults": 2,
+          "children": 6,
+          "raw": "{\"adult_count\": 2, \"child_count\": 6}"
+        },
+        {
+          "adults": 3,
+          "children": 3,
+          "raw": "{\"adult_count\": 3, \"child_count\": 3}"
+        },
+        {
+          "adults": 4,
+          "children": 4,
+          "raw": "{\"adult_count\": 4, \"child_count\": 4}"
+        }
+      ],
+      "pred_adults": 4,
+      "pred_children": 6,
+      "adult_confidence": "medium",
+      "child_confidence": "low",
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": false,
+      "processing_time": 4.0826966762542725,
+      "reasoning": "Processed 3 frames. Adult counts: [2, 3, 4], Child counts: [6, 3, 4]",
+      "raw_response": "{\"max\": {\"adults\": 4, \"children\": 6}, \"median\": {\"adults\": 3, \"children\": 4}, \"average\": {\"adults\": 3, \"children\": 4}, \"mode\": {\"adults\": 2, \"children\": 3}}"
+    },
+    {
+      "window_id": 3,
+      "frame_names": [
+        "frame_000005.jpg",
+        "frame_000006.jpg",
+        "frame_000007.jpg"
+      ],
+      "gt_adults": 4,
+      "gt_children": 5,
+      "per_frame_counts": [
+        {
+          "adults": 4,
+          "children": 4,
+          "raw": "{\"adult_count\": 4, \"child_count\": 4}"
+        },
+        {
+          "adults": 3,
+          "children": 6,
+          "raw": "{\"adult_count\": 3, \"child_count\": 6}"
+        },
+        {
+          "adults": 4,
+          "children": 5,
+          "raw": "{\"adult_count\": 4, \"child_count\": 5}"
+        }
+      ],
+      "pred_adults": 4,
+      "pred_children": 6,
+      "adult_confidence": "high",
+      "child_confidence": "medium",
+      "adult_exact": true,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "processing_time": 4.11421799659729,
+      "reasoning": "Processed 3 frames. Adult counts: [4, 3, 4], Child counts: [4, 6, 5]",
+      "raw_response": "{\"max\": {\"adults\": 4, \"children\": 6}, \"median\": {\"adults\": 4, \"children\": 5}, \"average\": {\"adults\": 4, \"children\": 5}, \"mode\": {\"adults\": 4, \"children\": 4}}"
+    },
+    {
+      "window_id": 4,
+      "frame_names": [
+        "frame_000007.jpg",
+        "frame_000008.jpg",
+        "frame_000009.jpg"
+      ],
+      "gt_adults": 3,
+      "gt_children": 6,
+      "per_frame_counts": [
+        {
+          "adults": 4,
+          "children": 5,
+          "raw": "{\"adult_count\": 4, \"child_count\": 5}"
+        },
+        {
+          "adults": 3,
+          "children": 5,
+          "raw": "{\"adult_count\": 3, \"child_count\": 5}"
+        },
+        {
+          "adults": 0,
+          "children": 1,
+          "raw": "{\"adult_count\": 0, \"child_count\": 1}"
+        }
+      ],
+      "pred_adults": 4,
+      "pred_children": 5,
+      "adult_confidence": "low",
+      "child_confidence": "low",
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "processing_time": 4.016169548034668,
+      "reasoning": "Processed 3 frames. Adult counts: [4, 3, 0], Child counts: [5, 5, 1]",
+      "raw_response": "{\"max\": {\"adults\": 4, \"children\": 5}, \"median\": {\"adults\": 3, \"children\": 5}, \"average\": {\"adults\": 2, \"children\": 4}, \"mode\": {\"adults\": 0, \"children\": 5}}"
+    },
+    {
+      "window_id": 5,
+      "frame_names": [
+        "frame_000009.jpg",
+        "frame_000010.jpg",
+        "frame_000011.jpg"
+      ],
+      "gt_adults": 0,
+      "gt_children": 1,
+      "per_frame_counts": [
+        {
+          "adults": 0,
+          "children": 1,
+          "raw": "{\"adult_count\": 0, \"child_count\": 1}"
+        },
+        {
+          "adults": 1,
+          "children": 1,
+          "raw": "{\"adult_count\": 1, \"child_count\": 1}"
+        },
+        {
+          "adults": 1,
+          "children": 0,
+          "raw": "{\"adult_count\": 1, \"child_count\": 0}"
+        }
+      ],
+      "pred_adults": 1,
+      "pred_children": 1,
+      "adult_confidence": "high",
+      "child_confidence": "high",
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": true,
+      "child_within_2": true,
+      "processing_time": 4.026095867156982,
+      "reasoning": "Processed 3 frames. Adult counts: [0, 1, 1], Child counts: [1, 1, 0]",
+      "raw_response": "{\"max\": {\"adults\": 1, \"children\": 1}, \"median\": {\"adults\": 1, \"children\": 1}, \"average\": {\"adults\": 1, \"children\": 1}, \"mode\": {\"adults\": 1, \"children\": 1}}"
+    },
+    {
+      "window_id": 6,
+      "frame_names": [
+        "frame_000011.jpg",
+        "frame_000012.jpg",
+        "frame_000013.jpg"
+      ],
+      "gt_adults": 0,
+      "gt_children": 0,
+      "per_frame_counts": [
+        {
+          "adults": 1,
+          "children": 0,
+          "raw": "{\"adult_count\": 1, \"child_count\": 0}"
+        },
+        {
+          "adults": 0,
+          "children": 0,
+          "raw": "{\"adult_count\": 0, \"child_count\": 0}"
+        },
+        {
+          "adults": 1,
+          "children": 1,
+          "raw": "{\"adult_count\": 1, \"child_count\": 1}"
+        }
+      ],
+      "pred_adults": 1,
+      "pred_children": 1,
+      "adult_confidence": "high",
+      "child_confidence": "high",
+      "adult_exact": false,
+      "adult_within_1": true,
+      "child_exact": false,
+      "child_within_2": true,
+      "processing_time": 4.03482985496521,
+      "reasoning": "Processed 3 frames. Adult counts: [1, 0, 1], Child counts: [0, 0, 1]",
+      "raw_response": "{\"max\": {\"adults\": 1, \"children\": 1}, \"median\": {\"adults\": 1, \"children\": 0}, \"average\": {\"adults\": 1, \"children\": 0}, \"mode\": {\"adults\": 1, \"children\": 0}}"
+    }
+  ],
+  "baseline_metrics": {
+    "total_frames": 6,
+    "adult_within_1_pct": 83.33333333333334,
+    "child_within_2_pct": 100.0
+  },
+  "baseline_results": [
+    {
+      "frame_name": "frame_000002.jpg",
+      "gt_adults": 5,
+      "gt_children": 6,
+      "pred_adults": 2,
+      "pred_children": 5,
+      "adult_within_1": false,
+      "child_within_2": true,
+      "processing_time": 1.3887720108032227
+    },
+    {
+      "frame_name": "frame_000004.jpg",
+      "gt_adults": 3,
+      "gt_children": 3,
+      "pred_adults": 3,
+      "pred_children": 2,
+      "adult_within_1": true,
+      "child_within_2": true,
+      "processing_time": 1.2293365001678467
+    },
+    {
+      "frame_name": "frame_000006.jpg",
+      "gt_adults": 4,
+      "gt_children": 5,
+      "pred_adults": 3,
+      "pred_children": 6,
+      "adult_within_1": true,
+      "child_within_2": true,
+      "processing_time": 1.3568181991577148
+    },
+    {
+      "frame_name": "frame_000008.jpg",
+      "gt_adults": 3,
+      "gt_children": 6,
+      "pred_adults": 3,
+      "pred_children": 6,
+      "adult_within_1": true,
+      "child_within_2": true,
+      "processing_time": 1.3327021598815918
+    },
+    {
+      "frame_name": "frame_000010.jpg",
+      "gt_adults": 0,
+      "gt_children": 1,
+      "pred_adults": 1,
+      "pred_children": 1,
+      "adult_within_1": true,
+      "child_within_2": true,
+      "processing_time": 1.3997087478637695
+    },
+    {
+      "frame_name": "frame_000012.jpg",
+      "gt_adults": 0,
+      "gt_children": 0,
+      "pred_adults": 0,
+      "pred_children": 0,
+      "adult_within_1": true,
+      "child_within_2": true,
+      "processing_time": 1.1976404190063477
+    }
+  ]
+}
